@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: white;
+    --cor-terciaria: aqua;
+    --cor-quaternaria: rgb(7, 213, 7);
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+.cabecalho {
+    display: flex;
+    font-family: var(--fonte-primaria);
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    font-size: 1rem;
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 3% 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+.apresentacao__conteudo__texto {
+    width: 90%;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__conteudo__texto__destaque {
+    width: 90%;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto__destaque__especial {
+    width: 90%;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-quaternaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    margin-right: 5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+.apresentacao__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    width: 50%;
+    margin-right: 5rem;
+    text-align: center;
+    border-radius: 8px;
+    color: var(--cor-secundaria);
+    border: 4px solid var(--cor-terciaria);
+    padding: 0.8rem 0.04rem;
+}
+
+.apresentacao__links__link:hover {
+    background-color: #4b4747;
+}
+.apresentacao__mifoto {
+    width: 30%;
+}
+
+h1 {
+    color: var(--cor-secundaria);
+}
+
+p {
+    color: var(--cor-secundaria);
+}
+
+.experiencia-e-habilidades-intermediarias {
+    color: var(--cor-quaternaria);
+}
+
+.habilidades-basicas {
+    color: var(--cor-terciaria);
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-terciaria);
+    padding: 10px;
+    font-family: var(--fonte-primaria);
+    font-size: 1.25rem;
+    color: var(--cor-primaria);
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        padding: 6%;
+
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 5%;
+
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+
+    }
+}
+
+@media (min-width: 480px) and (max-width: 920px) {
+    .cabecalho {
+        padding: 6%;
+
+    }
+    
+    .cabecalho__menu {
+        justify-content: center;
+
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: auto;
+
+    }
+    
+    .apresentacao__conteudo {
+        width: auto;
+
+    }    
+}
+
+@media (min-width: 100px) and (max-width: 280px) {
+    .cabecalho {
+        padding: 10%;
+
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: auto;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+
+    }
+
+    .apresentacao__links__link {
+        padding: 5%;
+    }
+}
